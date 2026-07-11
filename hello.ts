@@ -1,15 +1,13 @@
 import express from 'express';
 
 const app = express(); 
-// Render asigna automáticamente un puerto en la variable de entorno PORT 
 const port = process.env.PORT || 3000;
 
-// Una ruta simple para verificar que funciona 
 app.get('/', (req, res) => { 
-res.send('¡Hola! Tu servidor en Render está vivo y funcionando correctamente.'); 
+res.send('¡Servidor activo y funcionando correctamente!'); 
 });
 
-// Esto mantiene la aplicación escuchando peticiones y evita el error 127 
+// Esta sección se simplificó para evitar errores de sintaxis 
 app.listen(port, () => { 
-console.log(Servidor corriendo en el puerto ${port}); 
+console.log('Servidor corriendo'); 
 });
